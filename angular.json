@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "omnichat:build:production"
+              "buildTarget": "omnichat:build:production"
             },
             "development": {
-              "browserTarget": "omnichat:build:development"
+              "buildTarget": "omnichat:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "omnichat:build"
+            "buildTarget": "omnichat:build"
           }
         },
         "test": {
