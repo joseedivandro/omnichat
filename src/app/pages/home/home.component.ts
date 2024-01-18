@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 import { Title, Meta } from '@angular/platform-browser';
 import { BannerComponent } from 'src/components/banner/banner.component';
 import { EmAltaComponent } from 'src/components/em-alta/em-alta.component';
@@ -15,27 +14,27 @@ import { ComediaComponent } from 'src/components/comedia/comedia.component';
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild(BannerComponent) bannerComponent!: BannerComponent;
+  
   @ViewChild(EmAltaComponent) emAltaComponent!: EmAltaComponent;
   @ViewChild(AcaoComponent) acaoComponent!: AcaoComponent;
   @ViewChild(AventuraComponent) aventuraComponent!: AventuraComponent;
   @ViewChild(AnimacaoComponent) animacaoComponent!: AnimacaoComponent;
   @ViewChild(ComediaComponent) comediaComponent!: ComediaComponent;
+  @ViewChild(BannerComponent) bannerComponent!: BannerComponent;
 
   constructor(
     private title: Title,
     private meta: Meta
   ) {
-    this.title.setTitle('Home - showtime');
+    this.title.setTitle('OmniFlix');
     this.meta.updateTag({
       name: 'description',
       content: 'watch online movies',
     });
   }
 
-
   ngOnInit(): void {
-   
+    // Lógica de inicialização, se necessário
   }
 
 }

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientModule } from '@angular/common/http'; 
 import { AnimacaoComponent } from './animacao.component';
+import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
 
 describe('AnimacaoComponent', () => {
   let component: AnimacaoComponent;
@@ -8,9 +9,10 @@ describe('AnimacaoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AnimacaoComponent]
-    })
-    .compileComponents();
+      declarations: [AnimacaoComponent],
+      imports: [HttpClientModule], 
+      providers: [MovieApiServiceService], 
+    }).compileComponents();
     
     fixture = TestBed.createComponent(AnimacaoComponent);
     component = fixture.componentInstance;

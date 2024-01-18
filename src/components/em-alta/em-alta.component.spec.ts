@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EmAltaComponent } from './em-alta.component';
+import { MovieApiServiceService } from 'src/app/service/movie-api-service.service';
+import { HttpClientModule } from '@angular/common/http'; 
 
 describe('EmAltaComponent', () => {
   let component: EmAltaComponent;
@@ -8,7 +9,9 @@ describe('EmAltaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EmAltaComponent]
+      declarations: [EmAltaComponent],
+      imports: [HttpClientModule], 
+      providers: [MovieApiServiceService], 
     })
     .compileComponents();
     

@@ -1,3 +1,5 @@
+// app.module.ts
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -31,7 +33,6 @@ import { ComediaComponent } from 'src/components/comedia/comedia.component';
     AventuraComponent,
     AnimacaoComponent,
     ComediaComponent
-    
   ],
   imports: [
     BrowserModule,

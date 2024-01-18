@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AcaoComponent } from './acao.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AcaoComponent', () => {
   let component: AcaoComponent;
@@ -8,7 +8,8 @@ describe('AcaoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AcaoComponent]
+      declarations: [AcaoComponent],
+      imports: [HttpClientTestingModule]  // Importe o HttpClientTestingModule
     })
     .compileComponents();
     
