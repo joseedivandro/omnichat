@@ -25,9 +25,7 @@ export class EmAltaComponent implements OnInit {
 
   trendingData() {
     this.service.trendingMovieApiData().subscribe((result) => {
-      console.log(result, 'trendingresult#');
       this.trendingMovieResult = result.results;
-      // this.trendingMovieResult
     });
   }
 

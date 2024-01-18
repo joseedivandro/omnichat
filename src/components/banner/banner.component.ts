@@ -26,9 +26,7 @@ export class BannerComponent implements OnInit {
   // bannerdata
   bannerData() {
     this.service.bannerApiData().subscribe((result) => {
-      console.log(result, 'bannerresult#');
       this.bannerResult = result.results;
-      console.log('result ta aqui',this.bannerResult);
     });
   }
 }
