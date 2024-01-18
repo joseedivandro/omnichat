@@ -1,27 +1,49 @@
-# Omnichat
+# OmniFlix
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Esse projeto é uma releitura de quando estava a aprender angular, na versão 14. A versão do Angular é a 17 com bootstrap. É uma releitura de um catálogo de filmes baseados na The Movie Database API, uma API open source que retorna informações de filmes e séries.
 
-## Development server
+## Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto tem o intuito de praticar a responsividade, consumação de API e a componentização.
 
-## Code scaffolding
+## Dinâmica
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para rodar o projeto, basta:
 
-## Build
+clicar em <> code, 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![image](https://github.com/joseedivandro/omnichat/assets/64916664/cc959d01-5b0e-4343-923f-3326f3b5e574)
 
-## Running unit tests
+copiar o link: https://github.com/joseedivandro/omnichat.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+abir um terminal no seu computador em uma pasta que deseja e dar o seguinte comando:
+git clone https://github.com/joseedivandro/omnichat.git
 
-## Running end-to-end tests
+ano mesmo terminal, basta dar o comando code ..
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+sua IDE irá abrir, agora, basta dar o comando ng serve -o
 
-## Further help
+ou, basta clicar no link do deploy: [link](https://omnichat-5w24.vercel.app)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Visão geral
+![image](https://github.com/joseedivandro/omnichat/assets/64916664/630c0a90-bb56-49cd-8301-e49b84df3e5b)
+
+
+Na página da OmniFlix Você conseguirá voltar sempre para a página inicial
+
+o botão pesquisar no canto superior esquerdo irá te levar para uma página de pesquisa de filmes
+
+
+ao escolher um filme, você irá ver a seguinte tela:
+![image](https://github.com/joseedivandro/omnichat/assets/64916664/f6085044-6c52-41d9-91e0-84acdd09ceac)
+
+Você poderá ver os atores que fizeram parte do filme e o trailler do mesmo.
+
+Caso queria ver outro filme, basta clicar em pesquisa ou em OmniFlix para voltar a página inicial.
+
+## testes 
+
+Para rodar os testes basta dar o comando ng test
+
+Os testes foram feitos com karma e jasmine utilizando as funções do próprio angular.
